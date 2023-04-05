@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useReducer } from "react";
 import { TbCircleDot } from "react-icons/tb";
 import axios from "axios";
+import InfinitScroll from 'react-infinite-scroll-component'
+
 import AppSearchBar from "../../../components/AppSearchBar";
 import Loader from "../../../components/Loader";
 import Pagination from "../../../components/Pagination";
@@ -18,6 +20,7 @@ import "./issuePage.css";
 const IssueListingPage = () => {
   //define state of issue listing page
   const [state, dispatch] = useReducer(issuePageReducer, initialState);
+
   const {
     issues,
     loadingIssue,
@@ -30,6 +33,8 @@ const IssueListingPage = () => {
 
   // get issue data
   const getIssues = async (currentPage) => {
+    if(loadingIssue) return;
+
     dispatch(getIssuesRequest()); //dispatch request action
     try {
       const { data } = await axios.get(
@@ -38,6 +43,7 @@ const IssueListingPage = () => {
         }`
       );
       dispatch(getIssueSuccess(data));
+      // dispatch(updateCurrentPage(currentPage));
     } catch (error) {
       dispatch(getIssueFail());
     }
@@ -48,6 +54,7 @@ const IssueListingPage = () => {
 
   // get searched data
   const getSearchedData = async (currentPage) => {
+    if(loadingIssue) return;
     dispatch(getIssuesRequest());
     try {
       const { data } = await axios.get(
@@ -90,6 +97,12 @@ const IssueListingPage = () => {
     <>
       {/* search bar */}
       <AppSearchBar handleSearch={handleSearch} />
+      <InfinitScroll
+        dataLength = {state?.issues?.length|| 10}
+        next = {()=>getIssues(currentPage)}
+        hasMore = {true}
+        loader={<h4>Loading ... </h4>}
+      >
       <div className="issue__container">
         <div className="issue__header">
           <TbCircleDot className="issue__svg" />
@@ -105,13 +118,8 @@ const IssueListingPage = () => {
           <IssuePageListing issues={issues} />
         )}
       </div>
+      </InfinitScroll>
 
-      {/* pagination */}
-      <Pagination
-        count={Math.ceil(totalPages / postsPerPage)}
-        handleChangePage={handleChangePage}
-        currentPage={currentPage}
-      />
     </>
   );
 };

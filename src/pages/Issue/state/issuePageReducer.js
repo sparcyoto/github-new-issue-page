@@ -21,7 +21,7 @@ const issuePageReducer = (state, action) => {
         ...state,
         loadingIssue: false,
         error: false,
-        issues: action?.payload,
+        issues: [...state?.issues , ...action?.payload],
       };
     }
     // get issue fail

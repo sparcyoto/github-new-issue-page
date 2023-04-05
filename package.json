@@ -19,7 +19,8 @@
     "react-markdown": "^8.0.4",
     "react-router-dom": "^5.3.3",
     "remark-gfm": "^3.0.1",
-    "remarkable-react": "^1.4.3"
+    "remarkable-react": "^1.4.3",
+    "react-infinite-scroll-component": "^4.5.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
