@@ -1,0 +1,44 @@
+:root {
+  --text-color: #fff;
+}
+/* header */
+.header {
+  width: 100%;
+  /* z-index: 1; */
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #24292f;
+  justify-content: space-between;
+}
+
+/* Header - Logo */
+.header .logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Header -Menu */
+.header .menu {
+  display: flex;
+  list-style: none;
+}
+
+/* Header - Menu Item */
+.header .menu li {
+  margin: 0 10px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* sub header  */
+.sub__header {
+  padding: 1rem 7.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #afb8c1;
+  font-size: 20px;
+}
+.sub__header span {
+  color: #24292f;
+}
