@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/github-new-issue-page/static/css/main.3095bace.css",
+    "main.js": "/github-new-issue-page/static/js/main.d14c6312.js",
+    "static/css/43.f45a8583.chunk.css": "/github-new-issue-page/static/css/43.f45a8583.chunk.css",
+    "static/js/43.d4a0e823.chunk.js": "/github-new-issue-page/static/js/43.d4a0e823.chunk.js",
+    "static/css/955.d165d642.chunk.css": "/github-new-issue-page/static/css/955.d165d642.chunk.css",
+    "static/js/955.d64077a7.chunk.js": "/github-new-issue-page/static/js/955.d64077a7.chunk.js",
+    "static/js/117.69106727.chunk.js": "/github-new-issue-page/static/js/117.69106727.chunk.js",
+    "static/js/720.eb48c0a0.chunk.js": "/github-new-issue-page/static/js/720.eb48c0a0.chunk.js",
+    "static/js/748.b72f02b4.chunk.js": "/github-new-issue-page/static/js/748.b72f02b4.chunk.js",
+    "index.html": "/github-new-issue-page/index.html",
+    "main.3095bace.css.map": "/github-new-issue-page/static/css/main.3095bace.css.map",
+    "main.d14c6312.js.map": "/github-new-issue-page/static/js/main.d14c6312.js.map",
+    "43.f45a8583.chunk.css.map": "/github-new-issue-page/static/css/43.f45a8583.chunk.css.map",
+    "43.d4a0e823.chunk.js.map": "/github-new-issue-page/static/js/43.d4a0e823.chunk.js.map",
+    "955.d165d642.chunk.css.map": "/github-new-issue-page/static/css/955.d165d642.chunk.css.map",
+    "955.d64077a7.chunk.js.map": "/github-new-issue-page/static/js/955.d64077a7.chunk.js.map",
+    "117.69106727.chunk.js.map": "/github-new-issue-page/static/js/117.69106727.chunk.js.map",
+    "720.eb48c0a0.chunk.js.map": "/github-new-issue-page/static/js/720.eb48c0a0.chunk.js.map",
+    "748.b72f02b4.chunk.js.map": "/github-new-issue-page/static/js/748.b72f02b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3095bace.css",
+    "static/js/main.d14c6312.js"
+  ]
+}
